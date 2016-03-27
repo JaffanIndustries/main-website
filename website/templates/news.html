@@ -6,12 +6,11 @@
 				<div class="recent-works">
 					<h3>Recent Updates</h3>
 					<div id="works">
+						{% for obj in update %}
 						<div class="work-item">
-							<p>Meet us at the Gulf Food Manufacturing which will take place in Dubai from 6 - 9 November 2016 .<br><br> Details to come soon..</p>
+							<p>obj.description</p>
 						</div>
-						<div class="work-item">
-							<p>Meet us at the Gulf Food Manufacturing which will take place in Dubai from 27-29 October 2015 .<br><br> Our stand is at Sheikh Saeed Hall (S2-D46).<br>This year we have 88 sqm stand and we do have several principals sharing the stand with us and this year we do have :<br>Memak - Turkey <br>They do provide a high quality machines for the chocolate processing and bakery industries.<br>Krueger - Germany<br>One of the leader in the health cereal forming machines.</p>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -21,7 +20,9 @@
 			     	 <div class="message-body">
 						<!--<img src="" class="pull-left" alt="member">-->
 						<p>
-							{{ context.about }}
+						{% for obj in about %}
+							{{ obj.content }}
+						{% endfor %}
 						</p>
 			     	 </div>
 			       	<!--a-- href="#" class="btn btn-border btn-effect pull-right">Read More</a-->
