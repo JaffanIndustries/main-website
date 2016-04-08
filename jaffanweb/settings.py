@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'DBDash',
         'USER': 'admin',
         'PASSWORD': 'Tarifjaf59',
-        'HOST': 'dbdash.c0mmmqp4txuj.us-west-1.rds.amazonaws.com',
+        'HOST': '',
         'PORT': '3306',
     }
 }

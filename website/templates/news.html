@@ -6,9 +6,9 @@
 				<div class="recent-works">
 					<h3>Recent Updates</h3>
 					<div id="works">
-						{% for obj in update %}
+						{% for obj in news %}
 						<div class="work-item">
-							<p>obj.description</p>
+							<p>{{ obj.description }}</p>
 						</div>
 						{% endfor %}
 					</div>
