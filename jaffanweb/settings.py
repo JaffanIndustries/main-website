@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'DBDash',
         'USER': 'admin',
         'PASSWORD': 'Tarifjaf59',
-        'HOST': '',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }

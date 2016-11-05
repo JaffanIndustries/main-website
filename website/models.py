@@ -31,7 +31,7 @@ class update(models.Model):
 	description = models.CharField(max_length=300)
 	active = models.BooleanField(default=True)
 	created = models.DateTimeField(auto_created=True, auto_now=False)
-	updated = models.DateTimeField(auto_now=True, auto_created=False)	
+	updated = models.DateTimeField(auto_now=True, auto_created=False)
 
 	def __str__(self):
 		return self.short_description
@@ -42,4 +42,4 @@ class product(models.Model):
 	description = models.CharField(max_length=400)
 #	image = models.ImageField(image_path='')
 	created = models.DateTimeField(auto_created=True, auto_now=False)
-	updated = models.DateTimeField(auto_now=True, auto_created=False)		
+	updated = models.DateTimeField(auto_now=True, auto_created=False)

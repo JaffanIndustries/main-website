@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import about, services, update, product
+
+
 # Create your views here.
 def home(request):
 	context = dict()
